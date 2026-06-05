@@ -1,4 +1,4 @@
-/// FOTO E NOME DOS MEMBRINHOS
+/// FOTO E NOME DOS MEMBRINHOS quausy
 const pessoas = [
     { /// 0
         nome: "Aeolus",
