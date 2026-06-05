@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#viewport {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#linhas {
+    position: absolute;
+    width: 10000px;
+    height: 10000px;
+    pointer-events: none;
+}
+
+#mapa {
+    width: 10000px;
+    height: 10000px;
+    position: relative;
+    background-color: #e0e0e0;
+
+    transform-origin: 0 0;
+}
+
+#titulo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #fdfdb9;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+/* as coordenadas do mouse lá, pow */
+#coords {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    background: #fdfdb9;
+    font-family: 'Archivo Black', sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+
+    z-index: 9999;
+    white-space: pre-line;
+    box-sizing: border-box;
+}
+
+.pessoa {
+    position: absolute;
+    width: 120px;
+    text-align: center;
+}
+
+.pessoa img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    border: 3px solid black;
+}
+
+.pessoa p {
+    margin: 5px 0 0 0;
+    font-family: 'Figtree', sans-serif;
+    padding: 2px;
+    z-index: 9999;
+    background: #fdfdb9;
+}
