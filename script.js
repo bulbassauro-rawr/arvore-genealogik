@@ -354,6 +354,38 @@ document.addEventListener("mousemove", (e) => {
     atualizarMapa();
 });
 
+document.addEventListener("touchstart", (e) => {
+
+    arrastando = true;
+
+    ultimoX = e.touches[0].clientX;
+    ultimoY = e.touches[0].clientY;
+});
+
+document.addEventListener("touchend", () => {
+
+    arrastando = false;
+});
+
+document.addEventListener("touchmove", (e) => {
+
+    if (!arrastando) return;
+
+    cameraX +=
+      (e.touches[0].clientX - ultimoX) * 0.5;
+
+    cameraY +=
+      (e.touches[0].clientY - ultimoY) * 0.5;
+
+    ultimoX =
+      e.touches[0].clientX;
+
+    ultimoY =
+      e.touches[0].clientY;
+
+    atualizarMapa();
+});
+
 document.addEventListener("wheel", (e) => {
     e.preventDefault();
 
