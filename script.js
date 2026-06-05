@@ -166,16 +166,16 @@ const ligacoes = [
 {
     de: 8,
     para: 7,
-    texto: "CASAL",
-    tipo: "vermelha",
+    texto: "AMANTES",
+    tipo: "roxa",
     offsetY: -45,
     offsetX: 12
 },
 {
     de: 7,
     para: 6,
-    texto: "AMANTES",
-    tipo: "roxa",
+    texto: "CASAL",
+    tipo: "vermelha",
     offsetY: 50,
     offsetX: 5,
     curvaX1: 200,
